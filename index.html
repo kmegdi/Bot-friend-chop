@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>بوت صديق فري فاير 🔥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1 class="main-title">👑 بوت صديق فري فاير - فريق XZA</h1>
+        <p class="message glow">🎮 أدخل اسمك للتسجيل:</p>
+        <input type="text" placeholder="اسم اللاعب..." id="username" class="input">
+        <button onclick="confirmRegistration()" class="btn">تأكيد</button>
+
+        <div id="confirmation" class="hidden fade-in">
+            <p class="warning">⚠️ هل أنت متأكد أنك تريد التسجيل في موقع بوت صديق فريق XZA؟</p>
+            <button onclick="showWelcome()" class="btn confirm">نعم، متأكد</button>
+        </div>
+
+        <div id="final" class="hidden fade-in">
+            <img src="https://static.wikia.nocookie.net/freefire/images/e/ea/Kelly.jpg" alt="Kelly" class="avatar">
+            <h2 class="welcome">🎉 مرحبًا بك، أيها الأسطورة!</h2>
+            <p class="highlight">🚀 هذا موقع بيع بوت صديق فري فاير</p>
+
+            <div class="plans card">
+                <h3>💰 الأسعار:</h3>
+                <ul>
+                    <li>🔥 يوم: <strong>1$</strong></li>
+                    <li>⚡ يومين: <strong>2$</strong></li>
+                    <li>🚀 3 أيام: <strong>5$</strong></li>
+                    <li>🎯 أسبوع: <strong>20$</strong></li>
+                    <li>🌟 شهر: <strong>29$</strong></li>
+                    <li>👑 عام: <strong>150$</strong></li>
+                </ul>
+            </div>
+
+            <div class="contact card">
+                <p>📞 رقم المطور: <strong>+213 541700591</strong></p>
+                <p>🧑‍💻 يوزر المطور: <a href="https://t.me/DeV_xzanja" target="_blank">@DeV_xzanja</a></p>
+            </div>
+
+            <footer>
+                <p>⚡️ جميع الحقوق محفوظة لفريق XZA - بوت صديق فري فاير © 2025</p>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        function confirmRegistration() {
+            const name = document.getElementById('username').value;
+            if (name.trim() !== "") {
+                document.querySelector('.message').style.display = 'none';
+                document.getElementById('username').style.display = 'none';
+                document.querySelector('.btn').style.display = 'none';
+                document.getElementById('confirmation').classList.remove('hidden');
+            }
+        }
+
+        function showWelcome() {
+            document.getElementById('confirmation').style.display = 'none';
+            document.getElementById('final').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
