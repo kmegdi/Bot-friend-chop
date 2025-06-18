@@ -1,10 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <title>بوت صديق فري فاير 🔥</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            font-family: 'Cairo', sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            box-shadow: 0 0 25px #0ff;
+        }
+
+        .main-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #00ffff;
+        }
+
+        .glow {
+            font-size: 20px;
+            color: #ffeb3b;
+            text-shadow: 0 0 8px #ffc107;
+        }
+
+        .input {
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            margin-top: 15px;
+            width: 80%;
+            max-width: 400px;
+            outline: none;
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 10px 25px;
+            background: #00c9ff;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #007fff;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .warning {
+            color: #ff9800;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .avatar {
+            width: 130px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .welcome {
+            font-size: 26px;
+            margin: 15px 0;
+            color: #00ffcc;
+        }
+
+        .highlight {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .plans {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        .plans h3 {
+            margin-bottom: 10px;
+            color: #ffc107;
+        }
+
+        .plans ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .plans li {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .contact {
+            margin-top: 25px;
+            font-size: 16px;
+        }
+
+        .contact a {
+            color: #00eaff;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
 </head>
 <body>
     <section class="container">
@@ -19,11 +154,11 @@
         </div>
 
         <div id="final" class="hidden fade-in">
-            <img src="https://static.wikia.nocookie.net/freefire/images/e/ea/Kelly.jpg" alt="Kelly" class="avatar">
+            <img src="https://pin.it/5ujAYy15F" alt="Kelly" class="avatar">
             <h2 class="welcome">🎉 مرحبًا بك، أيها الأسطورة!</h2>
             <p class="highlight">🚀 هذا موقع بيع بوت صديق فري فاير</p>
 
-            <div class="plans card">
+            <div class="plans">
                 <h3>💰 الأسعار:</h3>
                 <ul>
                     <li>🔥 يوم: <strong>1$</strong></li>
@@ -35,7 +170,12 @@
                 </ul>
             </div>
 
-            <div class="contact card">
+            <div class="buttons">
+                <a href="payment.html" class="btn">💳 طرق الدفع</a>
+                <a href="https://t.me/DeV_xzanja" class="btn" target="_blank">🧑‍💻 المطور</a>
+            </div>
+
+            <div class="contact">
                 <p>📞 رقم المطور: <strong>+213 541700591</strong></p>
                 <p>🧑‍💻 يوزر المطور: <a href="https://t.me/DeV_xzanja" target="_blank">@DeV_xzanja</a></p>
             </div>
